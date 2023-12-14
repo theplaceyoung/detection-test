@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>로컬 이미지 업로드 및 표시</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="업로드">
+    </form>
+    {% if file_path %}
+        <h2>업로드된 이미지</h2>
+        <!-- <img src="{{ file_path }}" alt="Uploaded Image" width="300"> -->
+        <img src="C:\Users\thepl\OneDrive\바탕 화면\detect_post\uploads" alt="Uploaded Image" width="300">
+        {% endif %}
+</body>
+</html>
